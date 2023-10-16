@@ -6,8 +6,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import jugueteria.Venta;
-import jugueteria.DAO;
 
 public class DAOVenta extends DAO {
 	public List<Venta> consultarTodos() {

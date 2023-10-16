@@ -1,7 +1,7 @@
-package jugueteria;
+package pe.jugueteria.gestios_usuarios.dto;
 
-public class Usuario {
-	//atributos
+public class DTOUsuarioNuevo {
+	//Atributos	
 	private String id;
 	private String nombres;
 	private String apellidos;
@@ -11,7 +11,7 @@ public class Usuario {
 	private String contraseña;
 	private int id_rol;
 	
-	//metodos
+	//Getter and Setter
 	public String getId() {
 		return id;
 	}
@@ -59,8 +59,7 @@ public class Usuario {
 	}
 	public void setId_rol(int id_rol) {
 		this.id_rol = id_rol;
-	}
+	}	
 	
 	
-
 }

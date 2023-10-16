@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@page import="jugueteria.Usuario"%>
+<%@page import="jugueteria.DAOUsuario"%>
+<%@page import="java.util.List"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,6 +53,10 @@
         </div>
     </header>
     <main >
+    <%
+		DAOUsuario dao = new DAOUsuario();
+		List<Usuario> lst = dao.consultarTodos();	
+	%>
         <div class="container-form register">
             <div class="information">
                 <div class="info-childs">
@@ -120,23 +127,20 @@
                         <i class='bx bxl-twitter' ></i>
                     </div>
                     <p>o Iniciar Sesión con una cuenta</p>
-                    <form class="form">
-    
+                    <form class="form" action="AuthServlet" method="post">    				
                         <label >
                             <i class='bx bx-envelope' ></i>
-                            <input type="email" placeholder="Correo Electronico">
+                            <input type="email" placeholder="Correo Electronico" name="email">
                         </label>
                         <label>
                             <i class='bx bx-lock-alt' ></i>
-                            <input type="password" placeholder="Contraseña">
+                            <input type="password" placeholder="Contraseña" name="password">
                         </label>
                         <label id="checkbox-label">
                             <p>Guardar Contraseña</p>
-                            <input type="checkbox" id="save-password">
-                            
-                        </label>
-                        
-                        <input type="submit" value="Iniciar Sesión">
+                            <input type="checkbox" id="save-password">                            
+                        </label>                        
+                        <input type="submit" value="Iniciar Sesión">                       
                     </form>
                 </div>
             </div>
@@ -171,6 +175,5 @@
         </div>
     </footer>
     <script src="src/func.js"></script>
-</body>
-
+</body>					
 </html>
