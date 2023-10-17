@@ -238,8 +238,8 @@
             </div>
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                <p>Nos ubicamos en: C. San Camilo 333, Cercado De Arequipa 04001</p>
+			<p>Somos una tienda de juguetes dedicada a brindar diversión y alegría a niños de todas las edades. Nuestros productos están cuidadosamente seleccionados para garantizar calidad y seguridad en cada juguete que ofrecemos.</p>
             </div>
             <div class="box">
                 <h2>SIGUENOS</h2>

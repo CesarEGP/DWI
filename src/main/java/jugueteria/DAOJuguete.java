@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import pe.jugueteria.gestios_usuarios.dto.DTOJugueteActualizar;
-import pe.jugueteria.gestios_usuarios.dto.DTOJugueteNuevo;
+import pe.jugueteria.gestios.dto.DTOJugueteActualizar;
+import pe.jugueteria.gestios.dto.DTOJugueteNuevo;
 
 
 
@@ -44,8 +44,7 @@ public class DAOJuguete  extends DAO{
 	}
 	
 	
-	public void insertarJuguete(DTOJugueteNuevo dto) {
-	    List<Juguete> lst = new ArrayList<Juguete>();
+	public void insertarJuguete(DTOJugueteNuevo dto) {	    
 	    String sql = "INSERT INTO public.juguetes(\r\n"
 	    		+ "	id_juguete, descripcion, preciou, cantidad, img, idcateg)\r\n"
 	    		+ "	VALUES (uuid_generate_v4(), ?, ?, ?, ?, ?);";
@@ -69,8 +68,7 @@ public class DAOJuguete  extends DAO{
 	    }	
 	}
 	
-	public void actualizarJuguete(DTOJugueteActualizar dto) {
-	    List<Juguete> lst = new ArrayList<Juguete>();
+	public void actualizarJuguete(DTOJugueteActualizar dto) {	    
 	    String sql = "UPDATE public.juguetes\r\n"
 	    		+ "	SET  descripcion=?, preciou=?, cantidad=?, img=?, idcateg=?\r\n"
 	    		+ "	WHERE id_juguete=?;";

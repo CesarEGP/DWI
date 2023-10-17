@@ -5,6 +5,9 @@ public class Venta {
 	private String estado;
 	private String metodo;
 	private String idUsuario;
+	private String comentario;
+	
+	
 	public String getIdVenta() {
 		return idVenta;
 	}
@@ -29,6 +32,14 @@ public class Venta {
 	public void setIdUsuario(String idUsuario) {
 		this.idUsuario = idUsuario;
 	}
+	public String getComentario() {
+		return comentario;
+	}
+	public void setComentario(String comentario) {
+		this.comentario = comentario;
+	}
+	
+	
 	
 	
 }

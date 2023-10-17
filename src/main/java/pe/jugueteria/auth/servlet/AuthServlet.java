@@ -58,7 +58,7 @@ public class AuthServlet extends HttpServlet {
 				request.getRequestDispatcher("index.jsp").forward(request, response);	
 			}        	
         } else {
-        	request.getRequestDispatcher("cart.jsp?error=true").forward(request, response);            
+        	request.getRequestDispatcher("ErrorUsuario.jsp").forward(request, response);            
         }
 	}
 

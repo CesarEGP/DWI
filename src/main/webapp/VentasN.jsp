@@ -17,12 +17,11 @@
     <body class="sb-nav-fixed">
         <div class="container">
             <h2>Nueva Venta</h2>
-            <form>
-              <input type="text" class="form-control" placeholder="ID venta">
-              <input type="text" class="form-control" placeholder="estado">
-              <input type="text" class="form-control" placeholder="método de pago">
-              <input type="text" class="form-control" placeholder="id Usuario">
-              <input type="text" class="form-control" placeholder="Comentario">
+            <form action="ServletPOSTVentaNueva" method="post">             
+              <input type="text" class="form-control" placeholder="id Usuario" name="id_usuario">
+              <input type="text" class="form-control" placeholder="estado" name="estado">
+              <input type="text" class="form-control" placeholder="método de pago" name="metodo">              
+              <input type="text" class="form-control" placeholder="Comentario" name="comentarios">
               <br>
               <input type="submit" value="Nuevo">
             </form>

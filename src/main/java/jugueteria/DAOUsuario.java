@@ -6,9 +6,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-
-import pe.jugueteria.gestios_usuarios.dto.DTOUsuarioActualizar;
-import pe.jugueteria.gestios_usuarios.dto.DTOUsuarioNuevo;
+import pe.jugueteria.gestios.dto.DTOUsuarioActualizar;
+import pe.jugueteria.gestios.dto.DTOUsuarioNuevo;
 
 
 public class DAOUsuario  extends DAO{
@@ -44,8 +43,7 @@ public class DAOUsuario  extends DAO{
 		return lst;
 	}
 	
-	public void insertarUsuario(DTOUsuarioNuevo dto) {
-	    List<Usuario> lst = new ArrayList<Usuario>();
+	public void insertarUsuario(DTOUsuarioNuevo dto) {	    
 	    String sql = "INSERT INTO public.usuarios(\r\n"
 	            + "    id_usuario, nombres, apellidos, telefono, direccion, correo, \"contrase¤a\", idrol)\r\n"
 	            + "    VALUES (uuid_generate_v4(), ?, ?, ?, ?, ?, ?, ?);";
@@ -71,8 +69,7 @@ public class DAOUsuario  extends DAO{
 	    }
 	}
 	
-	public void actualizarUsuario(DTOUsuarioActualizar dto) {
-	    List<Usuario> lst = new ArrayList<Usuario>();
+	public void actualizarUsuario(DTOUsuarioActualizar dto) {	    
 	    String sql = "UPDATE public.usuarios\r\n"
 	    		+ "	SET  nombres=?, apellidos=?, telefono=?, direccion=?, correo=?, \"contrase¤a\"=?, idrol=?\r\n"
 	    		+ "	WHERE correo = ?;";

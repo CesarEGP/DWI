@@ -82,6 +82,7 @@
 				<td>estado</td>
 				<td>metodo</td>
 				<td>Id_Usuario</td>
+				<td>Comentarios</td>
 			</tr>
 	
 			<%
@@ -99,6 +100,9 @@
 				</td>
 				<td class="border border-sky-500
 	border border-sky-500"><%=u.getIdUsuario()%>
+				</td>
+				<td class="border border-sky-500
+	border border-sky-500"><%=u.getComentario()%>
 				</td>
 			</tr>
 			<%
